@@ -1,0 +1,11 @@
+{
+  "task_id": "digadollar_otn_integration",
+  "patent": "US6908030B2",
+  "modules": [
+    {"agent":"Venus", "module":"otn_generator", "spec":"16-digit OTN: [1-digit network][4-digit issuer][10-digit txn-id][1-digit checksum]"},
+    {"agent":"Mars", "module":"srt_auth", "spec":"signed sequential challenge, single round-trip"},
+    {"agent":"Jupiter", "module":"txn_orchestrator", "spec":"user→merchant→issuer swimlane per Fig.5"}
+  ],
+  "outputs": ["~/C25/digadollar/otn/", "~/C25/digadollar/auth/", "~/C25/digadollar/txn/"],
+  "validation": ["otn-fuzz", "auth-replay-test", "claim-coverage-report"]
+}

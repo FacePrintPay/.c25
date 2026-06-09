@@ -1,0 +1,5 @@
+session_id=sess_1780028855
+otn=4123456789012345
+auth_req=true
+srt_auth=valid
+credit_check=approved

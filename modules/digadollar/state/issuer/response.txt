@@ -1,0 +1,2 @@
+status=APPROVED
+txn_ref=TXN_1780028855
